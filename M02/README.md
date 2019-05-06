@@ -19,7 +19,7 @@ $ cd vuemobapp
 ```
 4. 安装swtc-lib@nativescript定制版本
 ```bash
-$ npm install swtc-lib@nativescript
+$ npm install swtc-lib
 ```
 5. 更新webpack配置文件，应该只要添加一行就可以了
 > - 编辑webpack.config.js
@@ -100,10 +100,7 @@ $ tns run android --bundle
 </template>
 
 <script>
-    import { promisifyAll } from 'bluebird'
     const SwtcLib = require('swtc-lib')
-    // promisify, add Async() methods
-    promisifyAll(SwtcLib)
     const Wallet = SwtcLib.Wallet
     const Remote = SwtcLib.Remote
     const remote = new Remote({server: 'ws://swtclib.daszichan.com:5020', local_sign: true})
@@ -131,7 +128,7 @@ $ tns run android --bundle
         async mounted () {
             try {
                 // 同步连接
-                await remote.connectAsync()
+                await remote.connectPromise()
                 // 订阅帐本
                 remote.on('ledger_closed', (ledger_data) => {
                     this.ledger = ledger_data
