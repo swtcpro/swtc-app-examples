@@ -1,8 +1,10 @@
 ---
 home: true
-heroText: 社区版井通nodejs库
+heroText: SWTC公链nodejs库
 tagline: 应用开发者专用
 features:
+- title: 安全第一
+  details: 本地签名 密钥不出本机
 - title: 完全兼容
   details: 井通接口 井畅接口
 - title: 独享便利
@@ -17,6 +19,8 @@ features:
   details: 已经增加api, 可加代理版remote
 - title: 联盟链支持
   details: 等同支持所有井通联盟链
+- title: CDN可用
+  details: web版本直接CDN引用
 
 ---
 
@@ -42,67 +46,61 @@ features:
 	<a href="https://nodei.co/npm/swtc-wallet/"><img src="https://nodei.co/npm/swtc-wallet.png?mini=true" /></a>
 </p>
 
-<h3 align="center"><a href="docs/swtc/">改进提高</a></h3>
-<h3 align="center"><a href="docs/swtclib/">编程接口(lib)</a></h3>
-<h3 align="center"><a href="docs/api/">编程接口(api)</a></h3>
-<h3 align="center"><a href="docs/examples/">应用实例</a></h3>
-<h3 align="center"><a href="docs/swtcxlib/">联盟链扩展</a></h3>
-<h3 align="center"><a href="docs/swtcapi/">公链api扩展</a></h3>
+<h2>文档</h2>
 
-<h2 align="center"><a href="http://swtc.daszichan.com">程序包列表</a></h2>
-<center>
-<tr>
-	<th>程序包</th>
-	<th>功能描述</th>
-</tr>
-<tr>
-	<td><a href="docs/swtcxlib/">swtc-x-lib</a></td>
-	<td>等同支持井通联盟链, 基于websocket</td>
-</tr>
-<tr>
-	<td><a href="docs/swtclib/">swtc-lib</a></td>
-	<td>SWTC公链库, 基于websocket</td>
-</tr>
-<tr>
-	<td><a href="docs/swtcapi/">swtc-api</a></td>
-	<td>SWTC公链库, 基于restapi</td>
-</tr>
-<tr>
-	<td><a href="docs/swtctx/">swtc-transaction</a></td>
-	<td>井通公链交易库, 支付/挂单/关系/合约</td>
-</tr>
-<tr>
-	<td>swtc-serializer</td>
-	<td>井通公链交易序列化库, 基于钱包</td>
-</tr>
-<tr>
-	<td>swtc-utils</td>
-	<td>井通公链utility库，基于钱包</td>
-</tr>
-<tr>
-	<td><a href="docs/swtcwallet/">swtc-wallet</a></td>
-	<td>井通公链钱包库, 支持所有联盟链</td>
-</tr>
-<tr>
-	<td>swtc-factory</td>
-	<td>井通公链钱包库, 井畅接口</td>
-</tr>
-<tr>
-	<td>swtc-keypairs</td>
-	<td>公钥私钥</td>
-</tr>
-<tr>
-	<td>swtc-address-codec</td>
-	<td>编码解码</td>
-</tr>
-<tr>
-	<td>swtc-chains</td>
-	<td>基础信息</td>
-</tr>
-</center>
+<h3><a href="docs/swtc/">改进提高</a></h3>
+<h3><a href="docs/swtclib/">编程接口(lib)</a></h3>
+<h3><a href="docs/api/">编程接口(api)</a></h3>
+<h3><a href="docs/examples/">应用实例</a></h3>
+<h3><a href="docs/swtcxlib/">联盟链扩展</a></h3>
+<h3><a href="docs/swtcapi/">公链api扩展</a></h3>
 
-<h2 align="center">支持SWTCLIB</h2>
+<h2>程序包</h2>
+
+|程序包名称|CDN|功能描述|
+|----------|---|--------|
+|[swtc-x-lib](docs/swtcxlib/)|name: swtc_x_lib<br>[unpkg](https://unpkg.com/swtc-x-lib)<br>[jsdelivery](https://cdn.jsdelivr.net/npm/swtc-x-lib)|等同支持井通联盟链, 基于websocket|
+|[swtc-lib](docs/swtclib/)|name: swtc_lib<br>[unpkg](https://unpkg.com/swtc-lib)<br>[jsdelivery](https://cdn.jsdelivr.net/npm/swtc-lib)|SWTC公链库, 基于websocket|
+|[swtc-api](docs/swtcapi/)|name: swtc_api<br>[unpkg](https://unpkg.com/swtc-api)<br>[jsdelivery](https://cdn.jsdelivr.net/npm/swtc-api)|SWTC公链库, 基于restapi|
+|[swtc-transaction](docs/swtctx/)|name: swtc_transaction<br>[unpkg](https://unpkg.com/swtc-transaction)<br>[jsdelivery](https://cdn.jsdelivr.net/npm/swtc-transaction)|井通公链交易库, 支付/挂单/关系/合约|
+|swtc-serializer||井通公链交易序列化库, 基于钱包|
+|swtc-utils||井通公链utility库，基于钱包|
+|[swtc-wallet](docs/swtcwallet/)|name: swtc_wallet<br>[unpkg](https://unpkg.com/swtc-wallet)<br>[jsdelivery](https://cdn.jsdelivr.net/npm/swtc-wallet)|井通公链钱包库, 支持所有联盟链|
+|swtc-factory||井通公链钱包库, 井畅接口|
+|swtc-keypairs||公钥私钥|
+|swtc-address-codec||编码解码|
+|swtc-chains||基础信息|
+
+<h2 align="center">支持开源SWTCLIB 支持公链生态</h2>
+
+<p align="center"> **金主** 经济支援单位。可以参与影响库规划, 享受专业支持</p>
+<p align="center"> **赞助** 欢迎喜欢项目的个人捐助</p>
+<p align="center"> **用户** 列出公司或者个人也是对项目的支持</p>
+
+<a name="sponsors"></a>
+<h3 align="center">
+	金主
+</h3>
 <p align="center">
-	赞助<img valign="middle" src="https://img.shields.io/badge/swtc-donate-blue.svg" alt="swtc-donate" /> jGxW97eCqxfAWvmqSgNkwc2apCejiM89bG
+	<img align="center" src="https://raw.githubusercontent.com/swtcca/swtc-app-examples/master/images/swtcfdt.png" alt="SWTC基金会" height="100" />
+	<img align="center" src="https://raw.githubusercontent.com/swtcca/swtc-app-examples/master/images/bizain.png" alt="商链" height="100" />
+</p>
+
+<a name="donate"></a>
+<h3 align="center">
+	赞助
+</h3>
+<p align="center">
+	<img valign="middle" src="https://img.shields.io/badge/swtc-donate-blue.svg" alt="swtc-donate" /> jGxW97eCqxfAWvmqSgNkwc2apCejiM89bG
+	<br><img align="center" src="https://raw.githubusercontent.com/swtcca/swtc-app-examples/master/images/donate.png" alt="捐助" />
+</p>
+
+<a name="users"></a>
+<h3 align="center">
+	用户
+</h3>
+<p align="center">
+	CA节点 | 畅节点 | 至尚节点 | JSKY节点 <br>
+	<img align="center" src="https://raw.githubusercontent.com/swtcca/swtc-app-examples/master/images/jccdex.png" alt="井畅" height="100" />
 </p>
 
